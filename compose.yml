@@ -36,11 +36,20 @@ services:
       - db
       - wordpress
     image: wordpress:cli
+    container_name: wordpress-cli
     # user-id as wordpress. This way there are no permission problems
     # when running the cli
-    user: xfs
+    user: '33'
     volumes:
       - ./wordpress:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: lauti
+      WORDPRESS_DB_PASSWORD: lauti
+      WORDPRESS_DEBUG: 1
+    #entrypoint: echo "WordPress CLI container started. Run 'wp help' for available commands."
+    #entrypoint: sh -c "until nc -z db 3306; do echo 'Waiting for db...'; sleep 2; done; until wp core is-installed --path=/var/www/html; do echo 'Waiting for WordPress installation...'; sleep 2; done; wp"
+    entrypoint: tail -f /dev/null # This is a workaround to keep the container running
 
   phpmyadmin:
     depends_on:
