@@ -13,5 +13,7 @@ el volumen a mano
 
 - En el archivo `compose.yml` existe el servicio cli que permite ejecutar comandos de wp-cli
 - Una vez que se ejecuta un comando, el container finaliza
-- Para probar que funciona : `docker exec wordpress-cli wp --info`
+- Para probar que funciona, puede ejecutar lo siguientes comandos : 
+	- `docker exec wordpress-cli wp --info`
+	-	`docker exec wordpress-cli wp core version`
 - Para ejecutar un comando : `docker exec [CONTAINER NAME] [COMANDO]`
