@@ -17,3 +17,10 @@ el volumen a mano
 	- `docker exec wordpress-cli wp --info`
 	-	`docker exec wordpress-cli wp core version`
 - Para ejecutar un comando : `docker exec [CONTAINER NAME] [COMANDO]`
+
+
+## Para activar el modo multisitio
+
+- Agrega la siguiente línea justo antes de la línea que dice `/* That's all, stop editing! Happy blogging. */`:
+	- `define('WP_ALLOW_MULTISITE', true);`
+- Luego, en el escritorio de Wordpress : `Herramientas` -> `Configuración de la red` y finalmente instalá las configuraciones necesarias
