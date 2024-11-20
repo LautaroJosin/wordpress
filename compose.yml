@@ -6,9 +6,9 @@ services:
       - db
     image: wordpress:php7.4
     volumes:
-      - ./wordpress:/var/www/html
-      - ./wordpress/wp-content/plugins
-      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - /wordpress:/var/www/html
+      - /wordpress/wp-content/plugins
+      - /uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 #     - ./apache-entrypoint.sh:/usr/local/bin/apache-entrypoint.sh
     ports:
       - "80:80"
