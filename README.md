@@ -2,6 +2,10 @@
 
 - docker-compose up
 
+## Para cambiar permisos de Directorio Wordpress
+
+- sudo chown -R user:group wordpress/
+
 ## Para eliminar Containers y Volumenes 
 
 - docker-compose down -v
