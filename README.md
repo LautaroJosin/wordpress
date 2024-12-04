@@ -28,3 +28,11 @@ el volumen a mano
 - Agrega la siguiente línea justo antes de la línea que dice `/* That's all, stop editing! Happy blogging. */`:
 	- `define('WP_ALLOW_MULTISITE', true);`
 - Luego, en el escritorio de Wordpress : `Herramientas` -> `Configuración de la red` y finalmente instalá las configuraciones necesarias
+
+## Enlaces a repositorios de plugins
+
+- `wp-dataverse-embedder` : https://github.com/sedici/wp-dataverse-embedder
+- `wp-dspace` : https://github.com/sedici/wp-dspace
+- `wp-personal`: https://github.com/sedici/wp-personal (Para que funcione, descomprimir el .zip)
+- `wp-multisite-manager` : https://github.com/sedici/wp-multisite-manager
+
