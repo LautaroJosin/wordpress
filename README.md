@@ -6,6 +6,12 @@
 
 - sudo chown -R user:group wordpress/
 
+## Versiones de WP usadas 
+
+- wordpress:php7.4
+- wordpress:php8.2
+- wordpress:php8.3
+
 ## Para eliminar Containers y Volumenes 
 
 - docker-compose down -v
