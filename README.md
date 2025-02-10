@@ -2,6 +2,16 @@
 
 - docker-compose up
 
+## Para cambiar permisos de Directorio Wordpress
+
+- sudo chown -R user:group wordpress/
+
+## Versiones de WP usadas 
+
+- wordpress:php7.4
+- wordpress:php8.2
+- wordpress:php8.3
+
 ## Para eliminar Containers y Volumenes 
 
 - docker-compose down -v
@@ -17,3 +27,18 @@ el volumen a mano
 	- `docker exec wordpress-cli wp --info`
 	-	`docker exec wordpress-cli wp core version`
 - Para ejecutar un comando : `docker exec [CONTAINER NAME] [COMANDO]`
+
+
+## Para activar el modo multisitio
+
+- Agrega la siguiente línea justo antes de la línea que dice `/* That's all, stop editing! Happy blogging. */`:
+	- `define('WP_ALLOW_MULTISITE', true);`
+- Luego, en el escritorio de Wordpress : `Herramientas` -> `Configuración de la red` y finalmente instalá las configuraciones necesarias
+
+## Enlaces a repositorios de plugins
+
+- `wp-dataverse-embedder` : https://github.com/sedici/wp-dataverse-embedder
+- `wp-dspace` : https://github.com/sedici/wp-dspace
+- `wp-personal`: https://github.com/sedici/wp-personal (Para que funcione, descomprimir el .zip)
+- `wp-multisite-manager` : https://github.com/sedici/wp-multisite-manager
+
