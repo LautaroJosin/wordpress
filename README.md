@@ -31,9 +31,12 @@ el volumen a mano
 
 ## Para activar el modo multisitio
 
-- Agrega la siguiente línea justo antes de la línea que dice `/* That's all, stop editing! Happy blogging. */`:
+- Agrega la siguiente línea en el archivo `wp-config.php` justo antes de la línea que dice `/* That's all, stop editing! Happy blogging. */`:
 	- `define('WP_ALLOW_MULTISITE', true);`
+
 - Luego, en el escritorio de Wordpress : `Herramientas` -> `Configuración de la red` y finalmente instalá las configuraciones necesarias
+
+- Despues de terminar la instalación, se mostraran 2 porciones de codigo que hay que colocar en los archivos `wp-config.php` y `.htaccess` respectivamente
 
 ## Enlaces a repositorios de plugins
 
