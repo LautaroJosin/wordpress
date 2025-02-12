@@ -1,3 +1,5 @@
 wordpress/
 uploads.ini/
 db/
+wp-content/plugins/wp-dspace/
+wp-content/plugins/wp-multisite-manager/
