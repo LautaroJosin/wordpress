@@ -5,8 +5,8 @@
 ## Para cambiar permisos de Directorio Wordpress
 
 - sudo chown -R user:group wordpress/
-	- Conviene que el usuario principal sea www-data para poder instalar plugins y que el grupo sea otro usuario
-	- Ademas, hay que darle permisos de escritura al grupo por si queremos modificar algun archivo (tipicamente el wp-config.php) : chmod -R g+w directorio
+- Conviene que el usuario principal sea www-data para poder instalar plugins y que el grupo sea otro usuario
+- Ademas, hay que darle permisos de escritura al grupo por si queremos modificar algun archivo (tipicamente el wp-config.php) : chmod -R g+w directorio
 
 ## Versiones de WP usadas 
 
