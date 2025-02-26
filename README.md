@@ -38,6 +38,9 @@ el volumen a mano
 
 - Despues de terminar la instalación, se mostraran 2 porciones de codigo que hay que colocar en los archivos `wp-config.php` y `.htaccess` respectivamente
 
+- Una vez hecho esto, para instalar plugins es necesario agregar en `wp-config.php`despues de la linea WP_DEBUG la siguiente linea : 
+	- `define('FS_METHOD', 'direct');`
+
 ## Enlaces a repositorios de plugins
 
 - `wp-dataverse-embedder` : https://github.com/sedici/wp-dataverse-embedder
